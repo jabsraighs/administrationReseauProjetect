@@ -1,0 +1,17 @@
+[adminer]
+enabled = true
+filter = adminer
+logpath = /var/log/nginx/adminer.access.log
+maxretry = 3
+bantime = 3600
+findtime = 600
+
+
+[nginx-http-auth]
+enabled = true
+filter= nginx-http-auth
+maxrety = 3
+port    = http,https
+logpath = /var/log/nginx/error.log
+bantime = 120
+findtime = 600
